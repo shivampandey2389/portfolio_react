@@ -8,7 +8,7 @@ const MainBody =() =>{
         <img src="./profile_picture.png" alt="profile" />
       </div>
       <div className="text-white flex flex-col items-center gap-3.5 leading-7.5">
-      <p class="text-[40px] tracking-wider animate-bounce">Shivam Pandey</p>
+      <p class="text-[40px] tracking-wider animate-bounce max-sm:text-[30px]">Shivam Pandey</p>
         <span className="text-white text-xl border-2 border-[#969696] px-3 py-2 rounded-3xl cursor-pointer hover:bg-[#5f5a5a]">Frontend developer</span> 
       </div>
       <div className="w-[min(800px,100%)]">

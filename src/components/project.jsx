@@ -20,7 +20,7 @@ const Projects = () =>{
   ]
   return(
    <div className="flex flex-col items-start justify-start w-[80%] my-[20px]">
-    <h1 className="text-white text-[45px] tracking-wider">Projects</h1>
+    <h1 className="text-white text-[45px] tracking-wider max-sm:text-4xl">Projects</h1>
 
     <div className="flex  items-center justify-center w-[100%] my-5">
       <div className="flex flex-wrap justify-center gap-5.5 w-[min(100%,800px)]">
