@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer base{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    background: #000;
+  }
+  svg path{
+    fill: transparent;
+    stroke: #fff;
+    stroke-width:0.1 ;
+    stroke-dashoffset: 50;
+    stroke-dasharray: 50;
+    animation: svgTurn 4s ease-in-out 1 forwards;
+  }
+  @keyframes svgTurn {
+    0%{
+      stroke-dashoffset: 50;
+      stroke-dasharray: 50;
+      fill: transparent;
+    }
+    100%{
+      stroke-dashoffset: 0;
+      stroke-dasharray: 150;
+      fill: #fff;
+    }
+  }
+}
+
+@layer utilities{
+  .spinIn{
+    animation: spinIn 4s linear infinite forwards;
+  }
+
+  @keyframes spinIn {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+}
